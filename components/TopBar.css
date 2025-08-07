@@ -1,0 +1,167 @@
+.chrome-top-bar {
+  background-color: #f1e7c3;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.chrome-toolbar-row {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  height: 48px;
+  background-color: #f1e7c3;
+  gap: 8px;
+}
+
+.navigation-buttons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.toolbar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.toolbar-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.chrome-links-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 16px;
+  height: 32px;
+  background-color: white;
+}
+
+.google-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.google-link {
+  color: #5f6368;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.google-link:hover {
+  color: #202124;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chrome-toolbar-row {
+    padding: 0 4px;
+    height: 44px;
+    gap: 4px;
+  }
+
+  .nav-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .toolbar-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .chrome-links-row {
+    padding: 0 8px;
+    height: 28px;
+  }
+
+  .google-links {
+    gap: 12px;
+  }
+
+  .google-link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chrome-toolbar-row {
+    padding: 0 2px;
+    height: 40px;
+    gap: 2px;
+  }
+
+  .navigation-buttons {
+    gap: 2px;
+  }
+
+  .nav-btn {
+    width: 24px;
+    height: 24px;
+  }
+
+  .toolbar-actions {
+    gap: 2px;
+  }
+
+  .toolbar-btn {
+    width: 24px;
+    height: 24px;
+  }
+
+  .chrome-links-row {
+    padding: 0 4px;
+    height: 24px;
+  }
+
+  .google-links {
+    gap: 8px;
+  }
+
+  .google-link {
+    font-size: 11px;
+  }
+}

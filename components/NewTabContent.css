@@ -1,0 +1,301 @@
+.new-tab-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 120px);
+  padding: 20px;
+  background-color: #fff;
+  position: relative;
+}
+
+.google-logo {
+  font-family: 'Product Sans', 'Segoe UI', Arial, sans-serif, Nunito;
+  font-family: 'Nunito', sans-serif;
+  font-size: 92px;
+  font-weight: 400;
+  color: #6B5F00;
+  margin-bottom: 30px;
+  letter-spacing: -2px;
+}
+
+.search-container {
+  width: 100%;
+  max-width: 584px;
+  margin-bottom: 40px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  padding: 8px 16px;
+  box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+  transition: box-shadow 0.2s ease;
+}
+
+.search-bar:hover {
+  box-shadow: 0 2px 8px rgba(32,33,36,0.28);
+}
+
+.search-icon {
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #202124;
+  background: transparent;
+}
+
+.search-bar input::placeholder {
+  color: #9aa0a6;
+}
+
+.search-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.voice-search,
+.google-lens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.voice-search:hover,
+.google-lens:hover {
+  background-color: #f1f3f4;
+}
+
+.ai-mode {
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  border-radius: 16px;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: #5f6368;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.ai-mode:hover {
+  background-color: #f1f3f4;
+}
+
+.shortcut-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.shortcut-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.shortcut-item:hover {
+  transform: translateY(-2px);
+}
+
+.shortcut-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  background-color: #f1f3f4;
+  transition: background-color 0.2s ease;
+}
+
+.shortcut-icon img {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.shortcut-icon.add {
+  background-color: #cdba7f;
+  color: #000;
+}
+
+.shortcut-label {
+  font-size: 13px;
+  color: #5f6368;
+  text-align: center;
+  max-width: 80px;
+  line-height: 1.2;
+}
+
+.customize-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #cdba7f;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 13px;
+  color: #726317;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.customize-button:hover {
+  background-color: #c9b484;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .google-logo {
+    font-size: 72px;
+    margin-bottom: 20px;
+  }
+
+  .search-container {
+    max-width: 90%;
+  }
+
+  .search-bar {
+    padding: 6px 12px;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+  }
+
+  .search-actions {
+    gap: 4px;
+  }
+
+  .voice-search,
+  .google-lens {
+    width: 32px;
+    height: 32px;
+  }
+
+  .ai-mode {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  .shortcut-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 90%;
+  }
+
+  .shortcut-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .shortcut-icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .shortcut-label {
+    font-size: 12px;
+    max-width: 60px;
+  }
+
+  .customize-button {
+    bottom: 16px;
+    right: 16px;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .new-tab-content {
+    padding: 16px;
+    min-height: calc(100vh - 100px);
+  }
+
+  .google-logo {
+    font-size: 56px;
+    margin-bottom: 16px;
+  }
+
+  .search-container {
+    max-width: 95%;
+    margin-bottom: 24px;
+  }
+
+  .search-bar {
+    padding: 4px 8px;
+  }
+
+  .search-bar input {
+    font-size: 13px;
+  }
+
+  .search-actions {
+    gap: 2px;
+  }
+
+  .voice-search,
+  .google-lens {
+    width: 28px;
+    height: 28px;
+  }
+
+  .ai-mode {
+    padding: 3px 6px;
+    font-size: 11px;
+  }
+
+  .shortcut-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 95%;
+  }
+
+  .shortcut-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .shortcut-icon img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .shortcut-label {
+    font-size: 11px;
+    max-width: 50px;
+  }
+
+  .customize-button {
+    bottom: 12px;
+    right: 12px;
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+}

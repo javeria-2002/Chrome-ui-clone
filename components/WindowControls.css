@@ -1,0 +1,44 @@
+.window-controls {
+  display: flex;
+  gap: 0;
+  height: 100%;
+}
+
+.control-btn {
+  width: 46px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.control-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.control-btn.close:hover {
+  background-color: #e81123;
+}
+
+.control-btn.close:hover svg {
+  stroke: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .control-btn {
+    width: 40px;
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .control-btn {
+    width: 36px;
+    height: 24px;
+  }
+}
